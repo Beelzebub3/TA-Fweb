@@ -16,23 +16,31 @@ function Form() {
         setMensagem(`Bem vindo, ${nome}; sua senha é: ${senha}`)
     }
     return (
-        <div>
-            <form onSubmit={clicaEnter}>
-                <input
-                    type="text"
-                    value={nome}
-                    placeholder="Digite seu nome"
-                    onChange={mudaNome}
-                />
-                <input
-                    type="password"
-                    value={senha}
-                    placeholder="Digite sua senha"
-                    onChange={mudaSenha}
-                />
-            </form>
-            <button onClick={clicaEnter}>Entrar</button>
-            <p>{mensagem}</p>
+        <div className="container">
+            <h1>Login</h1>
+                <div className="texto">
+                    <form onSubmit={clicaEnter}>
+                        <input
+                            type="text"
+                            value={nome}
+                            placeholder="Digite seu nome"
+                            onChange={mudaNome}
+                        />
+                        <input
+                            type="password"
+                            value={senha}
+                            placeholder="Digite sua senha"
+                            onChange={mudaSenha}
+                        />
+                    </form>
+                <div className="boton">
+                    <button onClick={clicaEnter}>Entrar</button>
+                </div>
+            </div>
+            <div className="mensager">
+                    <p>{mensagem}</p>
+            </div>
+            <Link to={"/home"}>linkage</Link>
         </div>
     )}
     export default Form;

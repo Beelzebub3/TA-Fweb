@@ -3,7 +3,7 @@ import './pageLogin.css';
 import MyHeader from '../components/header';
 import Form from '../components/Login';
 
-function pageLog() {
+function PageLog() {
   return (
     <div className="content">
       <div>
@@ -15,4 +15,4 @@ function pageLog() {
     </div>
   );
 }
-export default pageLog;
+export default PageLog;

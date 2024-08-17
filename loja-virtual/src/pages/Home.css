@@ -1,0 +1,42 @@
+*{
+    background-color: white;
+}
+.loja{
+    position: relative;
+    margin: 20px;
+    padding: 5px;
+    border-style: solid;
+    height: 100%;
+}
+.buyKart{
+    position: absolute;
+    margin: 20px;
+    right: 0px;
+    top: 100px;
+    width: 25%;
+    height: 750px;
+}
+.prodList{
+    position: absolute;
+    margin: 20px;
+    width: 70%;
+    height: 750px;
+    left: 0px;
+    top: 100px;
+}
+.productos{
+    margin: 20PX;
+}
+.buton{
+    width: 10%;
+}
+.formBusca{
+    margin: 20px;
+    height: 25%;
+}
+.formBusca input{
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 10px;
+}
