@@ -7,10 +7,10 @@ function MyHeader() {
         <nav className="menu-opc">
             <ul>
                 <li>
-                    <Link to={"/Home"}>Home</Link>
+                    <Link to='/principal'>Home</Link>
                 </li>
                 <li>
-                    <a href='./pages/App.js'>Login</a>
+                    <Link to={"/"}>Login</Link>
                 </li>
             </ul>
         </nav>

@@ -12,8 +12,15 @@ function Form() {
         setSenha(event.target.value)
     }
     const clicaEnter = (event) => {
-        event.preventDefault();
-        setMensagem(`Bem vindo, ${nome}; sua senha é: ${senha}`)
+        if(nome == ''){
+            alert("Confira se inseriu seu nome corretamente!")
+        }
+        if (senha == ''){
+            alert("Confira se inseriu sua senha corretamente!")
+        }else{
+            event.preventDefault();
+            setMensagem(`Bem vindo, ${nome}; sua senha é: ${senha}`)
+        }
     }
     return (
         <div className="container">
@@ -40,7 +47,6 @@ function Form() {
             <div className="mensager">
                     <p>{mensagem}</p>
             </div>
-            <Link to={"/home"}>linkage</Link>
         </div>
     )}
     export default Form;
